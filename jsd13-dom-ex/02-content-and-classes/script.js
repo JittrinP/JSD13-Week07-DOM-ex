@@ -9,7 +9,7 @@ console.log(document.getElementById("heading").textContent="Welcome!")
 // innerHTML so the word "learning" is wrapped in a <strong> tag, i.e. the
 // paragraph should read: I am <strong>learning</strong> the DOM.
 
-document.getElementById("bio").innerHTML = ` I am <strong>learning</strong> the DOM`
+document.getElementById("bio").innerHTML = ` I am <strong>learning</strong> the DOM.`
 
 // TODO 3: Select #card. Read its "class" attribute with getAttribute and
 // console.log() it.
@@ -22,6 +22,7 @@ console.log(document.getElementById("card").getAttribute("class"))
 
 const cards = document.getElementById("card")
 cards.classList.add("highlight")
+console.log(cards.className)
 
 // TODO 5: #card starts with a data-visits="0" attribute. Read the current
 // value with card.dataset.visits, convert it to a number, add 1, write it
@@ -30,4 +31,5 @@ cards.classList.add("highlight")
 const card_ = document.querySelector("#card")
 let visits = Number(card_.dataset.visits)
 visits = visits + 1
-console.log(visits)
+card_.dataset.visits =visits
+console.log(card_.dataset.visits)
