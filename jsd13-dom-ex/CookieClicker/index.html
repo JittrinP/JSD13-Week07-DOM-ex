@@ -4,27 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSD13_Week07_CookieClicker_Homework</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="src/tailwind-output.css" />
   </head>
   <body>
     <header>
+       <!----------Nav bar---------->
       <nav>
-        <div class="navBar">JSD13_Week07_CookieClicker_Homework</div>
+        <div class="navBar bg-black">JSD13_Week07_CookieClicker_Homework</div>
       </nav>
     </header>
     <main>
-      <div class="story">
+      <!----------Click area---------->
+      <section class="story flex flex-col text-center w-full h-[45vh] bg-[aquamarine] p-2.5">
         <h1>My World</h1>
         <div id="EP">Evolution points(EP) : 0 points</div>
-      </div>
-      <div class="shop">
+      </section>
+      <!----------Tab---------->
+      <section class="tab">
+        <div id="shopTap">Shop</div>
+        <div id="upgradeTap">Upgrade</div>
+        <div id="statusTap">status</div>
+      </section>
+      <!----------Shop---------->
+      <section class="shop flex flex-col justify-normal w-full h-[25vh] bg-[rgb(232,255,127)] p-2.5 overflow-y-auto">
         <h1>Shop</h1>
-        <div class="shop_container"></div>
-      </div>
-      <div class="upgrade">
+        <div class="shop_container bg-[rgb(231,231,231)] w-full h-full rounded-xl"></div>
+      </section>
+      <!----------Upgrade---------->
+      <section class="upgrade flex justify-center w-full h-[25vh] bg-[rgb(255,234,189)] p-2.5 overflow-y-auto">
         <h1>Upgrade</h1>
-        <div class = "skills_container"></div>
-      </div>
+        <div class="skills_container"></div>
+      </section>
+      <!----------Status---------->
+      <section class="status bg-amber-500">
+        <h1>status</h1>
+        <div class="status_container"></div>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>

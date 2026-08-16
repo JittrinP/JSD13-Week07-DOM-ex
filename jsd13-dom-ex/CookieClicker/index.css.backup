@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+/* .navBar {
+  display: flex;
+  background-color: aqua;
+  justify-content: center;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  padding: 10px;
+} */
+
+.story {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 45vh;
+  background-color: aquamarine;
+  padding: 10px;
+}
+
+.shop {
+  display: flex;
+  justify-content: baseline;
+  width: 100%;
+  height: 25vh;
+  background-color: rgb(232, 255, 127);
+  flex-direction: column;
+  padding: 10px;
+overflow-y: auto;
+}
+
+.upgrade {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 25vh;
+  background-color: rgb(255, 234, 189);
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.clickedArea {
+  background-color: rgb(110, 252, 165);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.btn{
+    width: 5em;
+    height :3em;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+<!--shoparea-- > 
+.shop_container {
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+
+}
+
+.shopItem {
+  background-color: rgb(129, 59, 59);
+  width: 100%;
+  height: 60px;
+  border-radius: 12px;
+  padding: 5px;
+  border: 1px solid black;
+  display: flex;
+  box-shadow: 3px 3px 10px 1px black;
+  margin-bottom: 7px;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.imgItem {
+  height: 100%;
+  padding: 2px;
+}
+
+.detailShop{
+    background-color: #fff;
+    width: 60%;
+    margin: 0px 10px;
+}

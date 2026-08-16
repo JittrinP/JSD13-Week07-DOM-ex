@@ -1,0 +1,27 @@
+{
+  "name": "dom-jsd13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i jsd13-dom-ex/CookieClicker/src/tailwind-input.css -o jsd13-dom-ex/CookieClicker/src/tailwind-output.css",
+    "build:css:watch": "tailwindcss -i jsd13-dom-ex/CookieClicker/src/tailwind-input.css -o jsd13-dom-ex/CookieClicker/src/tailwind-output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JittrinP/JSD13-Week07-DOM-ex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JittrinP/JSD13-Week07-DOM-ex/issues"
+  },
+  "homepage": "https://github.com/JittrinP/JSD13-Week07-DOM-ex#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
