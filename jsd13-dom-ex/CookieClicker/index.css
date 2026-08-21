@@ -1,2 +1,322 @@
-/* All rules converted to Tailwind utility classes.
-   See index.css.backup for the original styles. */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: var(--retro-font);
+}
+:root {
+  --retro-border: #1a1010;
+  --retro-shadow: 4px 4px 0 #1a1010;
+  --retro-font: "Press Start 2P", monospace;
+}
+
+/********** Navbar **********/
+.navBar {
+  display: flex;
+  background-color: aqua;
+  justify-content: center;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  padding: 10px;
+}
+/**********Click area**********/
+.story {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 45vh;
+  background-color: aquamarine;
+  padding: 10px;
+  background-image: url("assets/background/era1-Primordial.png");
+  background-size: cover;
+  background-position: center;
+}
+.storyHeader {
+  background-color: #e2ff60;
+  border-radius: 10px;
+  opacity: 70%;
+  border: 3px solid var(--retro-border);
+}
+#EP {
+  padding-bottom: 0.5em;
+}
+#PPS {
+  font-size: 0.8em;
+  opacity: 0.8;
+  padding-bottom: 0.5em;
+}
+.story h1 {
+  font-size: 22px;
+  padding: 0.5em;
+}
+
+/**********tab**********/
+.tab {
+  color: #fff23e;
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #083344;
+  border-bottom: 4px solid var(--retro-border);
+}
+
+/*Display default*/
+.upgradeDisplay {
+  display: none;
+}
+.statusDisplay {
+  display: none;
+}
+
+#shopTab {
+  transition: transform 0.3s ease;
+  font-family: var(--retro-font);
+  font-size: 0.8em;
+  color: #9fc9d3;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+}
+#shopTab:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  color: white;
+}
+
+#upgradeTab {
+  transition: transform 0.3s ease;
+  font-family: var(--retro-font);
+  font-size: 0.8em;
+  color: #9fc9d3;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+}
+#upgradeTab:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  color: white;
+}
+
+#statusTab {
+  transition: transform 0.3s ease;
+  font-family: var(--retro-font);
+  font-size: 0.8em;
+  color: #9fc9d3;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+}
+#statusTab:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  color: white;
+}
+/**********shop**********/
+.shop {
+  display: flex;
+  width: 100%;
+  height: 42vh;
+  background-color: rgb(232, 255, 127);
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+  background-image: url("assets/background/shop-texture.png");
+  background-repeat: repeat;
+}
+/**********upgrade**********/
+.upgrade {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 42vh;
+  background-color: #d9b896;
+  padding: 10px;
+  overflow-y: auto;
+  background-image: url("assets/background/upgrade-texture.jpg");
+}
+
+/**********Status**********/
+.status {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 42vh;
+  display: flex;
+  width: 100%;
+  height: 42vh;
+  background-color: rgb(255, 211, 251);
+  padding: 10px;
+  overflow-y: auto;
+  background-image: url("assets/background/status-texture.jpg");
+}
+
+.shop h1,
+.upgrade h1,
+.status h1 {
+  display: inline-block;
+  font-family: var(--retro-font);
+  font-size: 20px;
+  color: #1a1010;
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.55);
+  border: 3px solid var(--retro-border);
+  border-radius: 4px;
+  padding: 8px 14px;
+  margin-bottom: 1em;
+}
+
+.statusContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.statusRow {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #6d6d6d;
+  align-items: center;
+    border: 3px solid var(--retro-border);
+    padding: 6px;
+    text-align: center;
+    line-height: 18px;
+}
+.status img {
+  width: 10em;
+}
+/**********Click area js**********/
+.clickedArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: aliceblue;
+  opacity: 0.5;
+  font-family: var(--retro-font);
+  border: 1px solid yellow;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.btn {
+  position: relative;
+  width: 10em;
+  height: 4em;
+  background-color: #e8b84b;
+  border: 3px solid var(--retro-border);
+  border-radius: 0;
+  box-shadow: var(--retro-shadow);
+  cursor: pointer;
+  font-family: var(--retro-font);
+  font-size: 9px;
+  color: #1a1010;
+  transition: transform 0.05s ease;
+  margin: 0px 6px;
+}
+.btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 var(--retro-border);
+}
+
+/*Tooltip โชว์ราคา (data-price) ตอน hover ปุ่ม แทนการพิมพ์ราคาลงไปในปุ่มตรงๆ*/
+.btn::after {
+  content: attr(data-price);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%) translateY(4px);
+  background: var(--retro-border);
+  color: #fff23e;
+  font-family: var(--retro-font);
+  font-size: 8px;
+  line-height: 1.4;
+  padding: 6px 8px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 10;
+}
+.btn:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/**********shoparea js**********/
+
+.shopContainer {
+  /* background-color: rgb(231, 231, 231); */
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.shopItem {
+  background-color: #2b2118;
+  width: 100%;
+  height: 60px;
+  padding: 6px 10px;
+  border: 1px solid black;
+  display: flex;
+  box-shadow: 3px 3px 10px 1px black;
+  margin-bottom: 7px;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid var(--retro-border);
+  border-radius: 0;
+  box-shadow: var(--retro-shadow);
+}
+
+.imgItem {
+  height: 100%;
+  padding: 2px;
+}
+
+.detailShop {
+  background-color: #f5e6c8;
+  color: #1a1010;
+  width: 60%;
+  padding: 4px 8px;
+  border: 2px solid var(--retro-border);
+}
+
+/**********upgradearea js**********/
+
+.skillsContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.upgradeRow {
+  background-color: #2b2118;
+  width: 100%;
+  height: 60px;
+  padding: 6px 10px;
+  border: 1px solid black;
+  display: flex;
+  box-shadow: 3px 3px 10px 1px black;
+  margin-bottom: 7px;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid var(--retro-border);
+  border-radius: 0;
+  box-shadow: var(--retro-shadow);
+}
+
+.detailUpgrade {
+  background-color: #f5e6c8;
+  color: #1a1010;
+  width: 60%;
+  padding: 4px 8px;
+  border: 2px solid var(--retro-border);
+}
